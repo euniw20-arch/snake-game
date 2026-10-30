@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 지렁이 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1>🐍 지렁이 먹고 커지는 게임</h1>
+        <div class="score-board">
+            <div>점수 <span id="score">0</span></div>
+            <div>최고 점수 <span id="highScore">0</span></div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="overlay" id="startOverlay">
+                <h2>🐍 게임 시작!</h2>
+                <p>방향키(↑↓←→) 또는 WASD로 이동하세요!</p>
+                <button id="startBtn" class="btn">게임 시작</button>
+            </div>
+            <div class="overlay hidden" id="gameOverOverlay">
+                <h2>💀 게임 오버!</h2>
+                <p id="gameResult">최종 점수: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">다시 도전!</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="pauseBtn" class="btn">일시정지</button>
+            <button id="resetBtn" class="btn">게임 초기화</button>
+        </div>
+
+        <p class="hint">※ 몸통에 부딪히면 게임 오버!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
